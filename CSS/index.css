@@ -1,24 +1,23 @@
 .pg{
     display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+            grid-template-columns: 0.7fr 1fr 1fr 1fr;
+            grid-template-rows: 0.8fr 1fr 1fr 0.5fr;
             grid-template-areas: 
                                  "headerText headerText headerText headerText"
                                  "sidebar ConteudoPrincipal ConteudoPrincipal ConteudoPrincipal"
                                  "sidebar ConteudoPrincipal ConteudoPrincipal ConteudoPrincipal"
-                                 "footer footer footer footer" 
+                                 "sidebar footer footer footer" 
 }
                    
 
 #headerText {
 
  background-color: blueviolet;
- width:100%;
- height: 50px;
- text-align: center;
+ text-align: justify;
  color: rgb(251, 255, 1);
  grid-area: headerText;
-
+ margin: 0.2em;
             
                    
  
@@ -26,6 +25,8 @@
 #sidebar{ 
     background-color: blue;
     grid-area: sidebar;
+   margin: 0.2em;
+
 
 }
     
@@ -34,13 +35,16 @@
 #ConteudoPrincipal{
     background-color: brown;
     grid-area: ConteudoPrincipal;
-
+    margin: 0.2em;
 }
 
 
 #footer{
+    margin: 0.2em;
     background-color: rgb(212, 12, 12);
     grid-area: footer
+     
+    
 
 }
 
