@@ -29,21 +29,48 @@ body{
 #sidebar{ 
     background-color: blue;
     grid-area: sidebar;
-    
-   
-
 
 }
     
 #ConteudoPrincipal{
     background-color: brown;
-    grid-area: ConteudoPrincipal;
+    grid-area: ConteudoPrincipal; 
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+form{
+    width: 250px;
+    height: 150px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 10px 10px 10px;
+    align-items: center;
     
     
 }
+input{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgb(64, 230, 133);
+}
+button{
+    width: 200px;
+    height: 25px;
+    background-color: aqua;
+    border: none;
+    font-weight: 900;
+    color: rgb(247, 45, 45);
+    margin-top: 10px;
+}
+#ConteudoPrincipal a{
+    color: black;
+}
+
 
 #footer{
-    
     
     background-color: rgb(212, 12, 12);
     grid-area: footer
@@ -57,10 +84,6 @@ body{
     color:rgb(0, 0, 0);
     margin-right: 20px;
 
-    
-
-    
-
 }
 
 #menu a:hover{ 
@@ -68,3 +91,5 @@ body{
     color: antiquewhite;
 
 }
+
+
