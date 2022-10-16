@@ -1,33 +1,33 @@
 .pg{
     display: grid;
     height: 100vh;
+    
             grid-template-columns: 0.8fr 1fr 1fr 1fr;
-            grid-template-rows: 0.7fr 1fr 1fr 0.5fr;
+            grid-template-rows: 1fr 1.25fr 1fr 0.5fr;
             grid-template-areas: 
                                  "headerText headerText headerText headerText"
                                  "sidebar ConteudoPrincipal ConteudoPrincipal ConteudoPrincipal"
                                  "sidebar ConteudoPrincipal ConteudoPrincipal ConteudoPrincipal"
                                  "sidebar footer footer footer" 
+ 
 }
                    
 
 #headerText {
 
- background-color: blueviolet;
- text-align: center;
+ background-color: rgb(194, 187, 201);
  color: rgb(251, 255, 1);
  grid-area: headerText;
- margin: 0.2em;
- border-radius: 0.8em;
-            
+ align-items: center;  
+ display: flex;
+ justify-content: space-between;
                    
- 
 }
 #sidebar{ 
     background-color: blue;
     grid-area: sidebar;
-    margin: 0.2em;
-    border-radius: 0.8em;
+    
+   
 
 
 }
@@ -37,19 +37,34 @@
 #ConteudoPrincipal{
     background-color: brown;
     grid-area: ConteudoPrincipal;
-    margin: 0.2em;
-    border-radius: 0.8em;
+    
+    
 }
 
 
 #footer{
-    margin: 0.2em;
-    border-radius: 0.8em;
+    
+    
     background-color: rgb(212, 12, 12);
     grid-area: footer
     
-     
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 20px;
+    color:rgb(0, 0, 0);
+    margin-right: 20px;
+
+    
+
     
 
 }
 
+#menu a:hover{ 
+    background-color: rgb(140, 197, 82);
+    color: antiquewhite;
+
+}
