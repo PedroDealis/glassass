@@ -1,9 +1,13 @@
+body{
+    margin: 0;
+}
+
 .pg{
     display: grid;
     height: 100vh;
     
             grid-template-columns: 0.8fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1.25fr 1fr 0.5fr;
+            grid-template-rows: 0.7fr 1.0fr 1fr 0.5fr;
             grid-template-areas: 
                                  "headerText headerText headerText headerText"
                                  "sidebar ConteudoPrincipal ConteudoPrincipal ConteudoPrincipal"
@@ -12,7 +16,6 @@
  
 }
                    
-
 #headerText {
 
  background-color: rgb(194, 187, 201);
@@ -32,15 +35,12 @@
 
 }
     
-
-
 #ConteudoPrincipal{
     background-color: brown;
     grid-area: ConteudoPrincipal;
     
     
 }
-
 
 #footer{
     
